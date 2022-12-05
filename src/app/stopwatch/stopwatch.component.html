@@ -1,0 +1,42 @@
+<div class="overplay" *ngIf="!load">
+  <div class="spinner">
+    <img src="assets/cargando.gif" alt="Carganding...">
+  </div>
+</div>
+
+<div class = "sw-container">
+  <div class = "stopwatch">
+    <h1 class="sets">Sets: <span>{{sets}}</span></h1>
+    <br>
+    <span>{{hr}} : </span>
+    <span>{{min}} : </span>
+    <span>{{sec}} : </span>
+    <span>{{ms}}</span>
+  </div>
+
+  <div class="button-container">
+    <button class="btn-play-pause ripple" (click)="start()">
+      <i *ngIf="!running" class="fas fa-play"></i>
+      <i *ngIf="running" class="fas fa-pause"></i>
+    </button>
+    <button class="ripple" (click)="reset()">
+      <i class="fas fa-redo-alt"></i>
+    </button>
+  </div>
+
+  <div class="why">
+    <div class="why2">
+        <div class="text">
+          <hr>
+          <br>
+            <h2><b>¿Como se usa REST-TIMER? </b></h2>
+            <p>REST-TIMER cuenta un minuto de descanso entre cada serie de ejercicios,
+              siendo un minuto el tiempo recomendable y con mayores beneficios entre
+              hipertrofia muscular y resistencia. Al llegar al minuto el numero de sets incrementa</p>
+        </div>
+        <img src="/assets/restTime.jpg" alt="Ya es toda we :v" height="310px">
+    </div>
+  </div>
+</div>
+
+

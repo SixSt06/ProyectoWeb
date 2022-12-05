@@ -1,0 +1,34 @@
+<mat-card class="card">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-header">
+                SignIn
+            </div>
+            <div class="card-body">
+                <form [formGroup]="form"(submit)="Entrar()" *ngIf="!isLoading">
+                    <mat-form-field>
+                        <input
+                        matInput
+                        type="text"
+                        formControlName="usuario"
+                        placeholder="Usuario">
+                        <mat-error *ngIf="form.get('usuario').invalid">Por favor ingresa un usuario</mat-error>
+                      </mat-form-field>
+                      <mat-form-field>
+                        <input
+                        matInput
+                        type="password"
+                        formControlName="contraseña"
+                        placeholder="Contraseña">
+                        <mat-error *ngIf="form.get('contraseña').invalid">Por favor ingresa la contraseña</mat-error>
+                      </mat-form-field>
+                      <button
+                      mat-raised-button
+                      color="warn"
+                      type="submit"> SignIn</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</mat-card>

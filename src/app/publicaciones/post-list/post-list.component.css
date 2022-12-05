@@ -1,0 +1,62 @@
+:host {
+  display: block;
+  margin-top: 1rem;
+}
+
+.info-text{
+  text-align: center;
+}
+
+
+mat-spinner{
+  margin: auto;
+}
+
+.spinner{
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+:host ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
+  stroke: red;
+}
+
+.post-image{
+  width: 20%;
+}
+
+
+.post-image img{
+  width: 100%;
+  box-shadow: 1px 1px 5px rgba(0,0,0.5);
+}
+button{
+  border: none;
+  background: #ea1538;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: .4s;
+  /*
+  */
+}
+a{
+  border: none;
+  background: #1519ea;
+  padding: 12px 30px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: .4s;
+  /*
+  */
+}
+img{
+  display: block; margin: 20px auto; padding: 20px 0;
+
+  
+}

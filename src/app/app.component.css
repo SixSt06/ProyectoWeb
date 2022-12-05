@@ -1,0 +1,11 @@
+main {
+  width: 80%;
+  margin: 1rem auto;
+  /* Superior = 1em, derecho = 2em, inferior = 3em, izquierdo = 4em */
+  padding: 0em 2em 1em 2em;
+}
+
+.info-text {
+  text-align: center;
+}
+
